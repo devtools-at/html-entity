@@ -1,0 +1,44 @@
+{
+  "name": "@devtools-at/html-entity",
+  "version": "1.0.0",
+  "description": "HTML entity reference",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "html-entity",
+    "devtools",
+    "utility",
+    "converter",
+    "encoder",
+    "decoder"
+  ],
+  "author": "DevTools.at",
+  "license": "MIT",
+  "homepage": "https://devtools.at/tools/html-entity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtools-at/html-entity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devtools-at/html-entity/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
